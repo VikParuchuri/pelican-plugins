@@ -10,7 +10,6 @@ def find_preview(instance):
     if instance._content is not None:
         content = instance._content
         soup = BeautifulSoup(content)
-        log.info(soup)
         img = soup.find('img')
         if img is None:
             return
